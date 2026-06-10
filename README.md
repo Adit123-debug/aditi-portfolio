@@ -1,73 +1,100 @@
-# React + TypeScript + Vite
+# Aditi Bhadauria Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive professional portfolio website built using React, TypeScript, Vite, and Tailwind CSS.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This portfolio showcases the professional profile, experience, skills, education, achievements, and contact information of Aditi Bhadauria, an Administrative Professional with 8+ years of experience in School Administration, Academic Operations, Admission Management, Documentation, MIS Reporting, and Customer Relationship Management.
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* Modern UI with Tailwind CSS
+* Responsive Design
+* Animated Hero Section
+* Professional Loading Screen
+* Download Resume Functionality
+* Contact via Email
+* Direct Call Button
+* LinkedIn Integration
+* Skills Showcase
+* Experience Timeline
+* Education Section
+* Achievements Section
+* Smooth Navigation
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+* React
+* TypeScript
+* Vite
+* Tailwind CSS
+* Framer Motion
+* React CountUp
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Project Structure
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+src/
+├── components/
+│   ├── Navbar.tsx
+│   ├── Hero.tsx
+│   ├── About.tsx
+│   ├── Experience.tsx
+│   ├── Skills.tsx
+│   ├── Education.tsx
+│   ├── Achievements.tsx
+│   ├── WhyHireMe.tsx
+│   ├── Contact.tsx
+│   ├── Footer.tsx
+│   └── Loader.tsx
+├── App.tsx
+├── main.tsx
+└── index.css
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Installation
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Clone the repository:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+git clone https://github.com/Adit123-debug/aditi-portfolio.git
 ```
+
+Navigate to project directory:
+
+```bash
+cd aditi-portfolio
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start development server:
+
+```bash
+npm run dev
+```
+
+Build for production:
+
+```bash
+npm run build
+```
+
+## Live Demo
+
+Add your deployed Vercel URL here after deployment.
+
+## Contact
+
+**Aditi Bhadauria**
+
+* Email: [aditibhadauria230@gmail.com](mailto:aditibhadauria230@gmail.com)
+* LinkedIn: https://www.linkedin.com/in/aditi-bhadauria-305502390
+
+## License
+
+This project is intended for personal portfolio and professional showcase purposes.
